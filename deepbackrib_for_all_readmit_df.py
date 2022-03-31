@@ -197,24 +197,6 @@ class_weights = dict(zip(np.unique(y_train), class_weights))
 class_weights
 # class_weights {0: 0.5620659722222222, 1: 4.527972027972028}
 
-#GOOD MODELS
-#model = tf.keras.Sequential([
-                     #Dense(8, activation='relu'), 8 or 16
-                    # Dropout(0.5), 0.4 or 0.5
-                     #Dense(4, activation='relu'),
-                     #Dropout(0.5),
-                     #BatchNormalization(),
-                     #Dense(1, activation='sigmoid')])
-
-
-#model = Sequential()
-#model.add(Dense(16, activation='relu',kernel_regularizer=l2(0.001)))
-#model.add(Dropout(0.5))
-#model.add(BatchNormalization())
-#model.add(Dense(4, activation='relu',kernel_regularizer=l2(0.001)))
-#model.add(Dropout(0.5)) #don't make smaller 
-#model.add(BatchNormalization())
-#model.add(Dense(1, activation='sigmoid'))
 
 NAME="model-{}".format(int(time.time()))
 
